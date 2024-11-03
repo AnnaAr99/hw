@@ -15,13 +15,13 @@ var arr = [
         email:"andrii@mail.ru" // Нам такі не підходять
     },
 ];
-var filteredArr = [];
+var resultArr = [];
 for (var i = 0; i < arr.length; i++){
     var re = /[a-zA-Z0-9]+(\.[a-zA-Z0-9])?@gmail\.com|@yahoo\.com/;
     if (arr[i].email.search(re) !== -1) {
-        filteredArr.push(arr[i]);
+        resultArr.push(arr[i]);
     }
 }
 
 
-console.log(filteredArr);
+console.log(resultArr);
